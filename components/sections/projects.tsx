@@ -21,7 +21,7 @@ export default function Projects() {
       description:
         "A full-stack web application that enables university students to access grades, schedules, submit assignments, and receive announcements from faculty in real-time.",
       fullDescription:
-        "ShopEase is a full-stack e-commerce platform built to provide a seamless online shopping experience. The application features a modern React frontend with a robust Node.js backend, utilizing PostgreSQL for data persistence. The platform includes comprehensive user management, advanced product filtering, secure payment processing through Stripe, and a powerful admin dashboard for inventory and order management.",
+        "A robust academic management system designed for Ethiopian universities, this platform allows students to view grades, schedules, announcements, and assignments, while instructors can upload course materials, manage class rosters, and post updates. It streamlines academic workflows and fosters better communication between students, instructors, and administrators.",
       date: "Dec 2024",
       duration: "2.5 months",
       teamSize: "Solo Project",
@@ -48,7 +48,7 @@ export default function Projects() {
       description:
         "A smart attendance tracking system where instructors generate unique QR codes, and students scan them to mark attendance. Prevents fraud and manual errors.",
       fullDescription:
-        "TaskFlow is a comprehensive project management solution designed for modern teams. Built with Vue.js and powered by real-time Socket.io connections, it enables seamless collaboration across distributed teams. The application features intuitive Kanban boards, advanced task assignment, progress tracking, and integrated team communication tools.",
+        "An automated attendance tracking solution using dynamic QR codes and mobile scanning, this app enables instructors to generate unique session-based codes while students scan them to check in. The system prevents fraud, logs attendance in real time, and allows exportable reports, reducing manual errors and saving time.",
       date: "Oct 2024",
       duration: "1.5 months",
       teamSize: "Team of 3",
@@ -77,7 +77,7 @@ export default function Projects() {
         "An event listing and RSVP platform tailored to cultural, educational, and creative events in Ethiopia. Users can register, browse, or manage events.",
       fullDescription:
         "SocialMetrics is an advanced analytics platform that provides comprehensive insights into social media performance across multiple platforms. Built with Next.js and TypeScript, it features interactive data visualizations, automated reporting, and real-time metrics tracking. The dashboard integrates with major social media APIs to provide unified analytics and actionable insights.",
-      date: "Sep 2024",
+      date: "Sep 2023",
       duration: "2 months",
       teamSize: "Team of 2",
       role: "Backend & Admin System Developer",
@@ -103,10 +103,10 @@ export default function Projects() {
       description:
         "A lightweight web app for translating words between Afan Oromo and English, including audio pronunciation and sentence usage examples. Designed to help language learners.",
       fullDescription:
-        "DineReserve is a comprehensive restaurant management system that streamlines operations from reservations to payments. Built with React and Firebase, it provides restaurants with tools to manage table bookings, process orders, handle payments, and maintain customer relationships. The system includes QR code integration for contactless dining and comprehensive analytics for business insights.",
-      date: "Aug 2024",
+        "A bilingual web application that provides real-time Afan Oromo-English translations, audio pronunciations, usage examples, and offline access through a Progressive Web App. It is designed to support language learners, students, and travelers by offering a fast, easy, and reliable language tool that works even without internet.",
+      date: "Aug 2023",
       duration: "1 months",
-      teamSize: "Solo Project",
+      teamSize: "Team of 6",
       role: " Full-stack Developer",
       techStack: ["Next.js", "TailwindCSS", "Flask", "SQLite", "Web Speech API"],
       features: [
@@ -130,7 +130,7 @@ export default function Projects() {
       description:
         "A web and mobile-friendly directory app to discover, rate, and review small businesses in Ethiopian cities. It promotes visibility for local entrepreneurs.",
       fullDescription:
-        "WeatherWise is a feature-rich mobile weather application built with React Native. It provides accurate weather forecasts, interactive maps, severe weather alerts, and personalized weather insights. The app utilizes GPS for location detection, offers offline data caching, and includes customizable weather widgets for enhanced user experience.",
+        "This platform connects users with local Ethiopian businesses by providing a searchable, filterable directory complete with categories, maps, and user ratings. Business owners can claim and manage their profiles, helping them gain visibility and credibility while supporting digital transformation in underserved regions.",
       date: "Jul 2024",
       duration: "1.5 months",
       teamSize: "Solo Project",
@@ -159,7 +159,7 @@ export default function Projects() {
         "Educational platform with course creation, video streaming, progress tracking, and certification system.",
       fullDescription:
         "EduPlatform is a comprehensive learning management system designed for educational institutions and online course creators. Built with Angular and Node.js, it provides tools for course creation, video streaming, student progress tracking, and certification management. The platform includes integrated video conferencing for live classes and comprehensive analytics for educators.",
-      date: "Jun 2024",
+      date: "Jun 2023",
       duration: "4 months",
       teamSize: "Team of 4",
       role: "Backend Lead Developer",
