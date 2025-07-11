@@ -38,8 +38,8 @@ export default function Projects() {
         "File upload with metadata",
         "Relational data design (classes, courses, users)",
       ],
-      demoUrl: "https://student-portal.vercel.app",
-      codeUrl: "https://github.com/mohe-12/shopease-ecommerce",
+      demoUrl: "https://github.com/mohe-12",
+      codeUrl: "https://github.com/mohe-12",
      imageSrc: "images/education.jpg"
     },
     {
@@ -65,8 +65,8 @@ export default function Projects() {
          "Handling real-time data updates",
          "User validation and duplicate prevention",
       ],
-      demoUrl: "https://student-portal.vercel.app",
-      codeUrl: "https://github.com/mohe-12/taskflow-management",
+      demoUrl: "https://github.com/mohe-12",
+      codeUrl: "https://github.com/mohe-12",
       imageSrc: "/images/qrcode.png",
   
     },
@@ -93,8 +93,8 @@ export default function Projects() {
           "User authentication and email service",
           "CRUD and admin controls with moderation",
       ],
-      demoUrl: "https://ethiopia-events.vercel.app",
-      codeUrl: "https://github.com/mohe-12/social-analytics-dashboard",
+      demoUrl: "https://github.com/mohe-12,
+      codeUrl: "https://github.com/mohe-12",
       imageSrc: "/images/culture.jpg",
     },
     {
@@ -120,8 +120,8 @@ export default function Projects() {
         "Implementing TTS (Text-to-Speech)",
         "Optimizing PWA for offline usage",
       ],
-      demoUrl: "https://amharic-dictionary.vercel.app",
-      codeUrl: "https://github.com/mohe-12/restaurant-booking-system",
+      demoUrl: "https://github.com/mohe-12",
+      codeUrl: "https://github.com/mohe-12",
       imageSrc: "/images/oromo.png",
     },
     {
@@ -148,8 +148,8 @@ export default function Projects() {
         "Creating smooth map interactions on mobile",
         "Optimizing app performance and battery usage",
       ],
-      demoUrl: "https://ethiobiz-directory.vercel.app",
-      codeUrl: "https://github.com/mohe-12/weather-forecast-app",
+      demoUrl: "https://github.com/mohe-12",
+      codeUrl: "https://github.com/mohe-12",
       imageSrc: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&h=225&fit=crop&crop=center",
     },
     {
@@ -180,8 +180,8 @@ export default function Projects() {
         "Creating efficient progress tracking system",
         "Managing large file uploads and processing",
       ],
-      demoUrl: "https://eduplatform-lms.herokuapp.com",
-      codeUrl: "https://github.com/mohe-12/learning-management-system",
+      demoUrl: "https://github.com/mohe-12",
+      codeUrl: "https://github.com/mohe-12",
       imageSrc: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=225&fit=crop&crop=center",
     },
   ]
