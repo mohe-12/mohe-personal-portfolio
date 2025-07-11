@@ -12,8 +12,6 @@ interface ProjectCardProps {
   techStack: string[]
   teamSize: string
   category: string
-  demoUrl?: string
-  codeUrl?: string
   imageSrc?: string
   onClick: () => void
 }
@@ -25,8 +23,6 @@ export default function ProjectCard({
   techStack,
   teamSize,
   category,
-  demoUrl,
-  codeUrl,
   imageSrc,
   onClick,
 }: ProjectCardProps) {
@@ -91,30 +87,6 @@ export default function ProjectCard({
             isHovered ? "opacity-100 translate-y-0" : "opacity-70 translate-y-1",
           )}
         >
-          {demoUrl && (
-            <button
-              onClick={(e) => {
-                e.stopPropagation()
-                window.open(demoUrl, "_blank")
-              }}
-              className="flex items-center gap-1 text-sm text-teal-400 hover:text-teal-300 transition-colors"
-            >
-              <ExternalLink size={14} />
-              <span>Demo</span>
-            </button>
-          )}
-          {codeUrl && (
-            <button
-              onClick={(e) => {
-                e.stopPropagation()
-                window.open(codeUrl, "_blank")
-              }}
-              className="flex items-center gap-1 text-sm text-teal-400 hover:text-teal-300 transition-colors"
-            >
-              <Github size={14} />
-              <span>Code</span>
-            </button>
-          )}
         </div>
       </div>
       <div
