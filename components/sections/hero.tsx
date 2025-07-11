@@ -101,7 +101,7 @@ export default function Hero() {
                 </Link>
 
                 <a
-                  href="/files/mohammed-hasen-cv.pdf"
+                  href="/files/sample-resume.pdf"
                   download
                   className="group inline-flex items-center justify-center gap-2 bg-gray-800/50 text-teal-400 border 
                   border-teal-500/30 font-semibold px-8 py-4 rounded-full hover:bg-gray-700/50 hover:shadow-[0_0_25px_rgba(45,212,191,0.3)] 
