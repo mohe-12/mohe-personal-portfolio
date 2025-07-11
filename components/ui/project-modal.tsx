@@ -17,6 +17,8 @@ interface ProjectModalProps {
     teamSize: string
     role: string
     challenges: string[]
+    demoUrl?: string
+    codeUrl?: string
     imageSrc?: string
     gallery?: string[]
   }
@@ -197,7 +199,6 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                   ))}
                 </div>
               </div>
-              </div>
             </div>
           </div>
         </div>
@@ -205,3 +206,4 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
     </div>
   )
 }
+
