@@ -1,7 +1,6 @@
 "use client"
-
+import type { FormEvent } from "react"
 import type React from "react"
-
 import { useState, useEffect } from "react"
 import { MapPin, Phone, Mail, Linkedin, Github, Send } from "lucide-react"
 import SectionHeading from "@/components/ui/section-heading"
@@ -67,6 +66,38 @@ export default function Contact() {
     },
   ]
 
+const [result, setResult] = useState("");
+  const onSubmit = async (event: FormEvent) => {
+  event.preventDefault();
+  setResult("Sending...");
+
+  const formDataToSend = new FormData();
+  formDataToSend.append("access_key", "39a84a0f-8c8e-4242-94cf-c85e2b312c65");
+  formDataToSend.append("name", formData.name);
+  formDataToSend.append("email", formData.email);
+  formDataToSend.append("message", formData.message);
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formDataToSend,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully!");
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      console.log("Error", data);
+      setResult(data.message || "Submission failed.");
+    }
+  } catch (error) {
+    console.error("Submission error:", error);
+    setResult("Something went wrong. Please try again.");
+  }
+};
+  
   return (
     <section id="contact" className="py-20 relative scroll-mt-16">
       <SectionHeading title="Contact Me" subtitle="Let's get in touch" />
@@ -112,7 +143,7 @@ export default function Contact() {
           )}
         >
           <form
-            onSubmit={handleSubmit}
+            onSubmit={onSubmit}
             className="bg-gray-900/30 backdrop-blur-sm p-6 rounded-xl border border-gray-800/50"
           >
             <h3 className="text-xl font-semibold text-gray-200 mb-4">Send Me a Message</h3>
