@@ -38,8 +38,6 @@ export default function Projects() {
         "File upload with metadata",
         "Relational data design (classes, courses, users)",
       ],
-      demoUrl: "https://github.com/mohe-12",
-      codeUrl: "https://github.com/mohe-12",
      imageSrc: "images/education.jpg"
     },
     {
@@ -65,8 +63,6 @@ export default function Projects() {
          "Handling real-time data updates",
          "User validation and duplicate prevention",
       ],
-      demoUrl: "https://github.com/mohe-12",
-      codeUrl: "https://github.com/mohe-12",
       imageSrc: "/images/qrcode.png",
   
     },
@@ -93,8 +89,6 @@ export default function Projects() {
           "User authentication and email service",
           "CRUD and admin controls with moderation",
       ],
-      demoUrl: "https://github.com/mohe-12,
-      codeUrl: "https://github.com/mohe-12",
       imageSrc: "/images/culture.jpg",
     },
     {
@@ -120,8 +114,6 @@ export default function Projects() {
         "Implementing TTS (Text-to-Speech)",
         "Optimizing PWA for offline usage",
       ],
-      demoUrl: "https://github.com/mohe-12",
-      codeUrl: "https://github.com/mohe-12",
       imageSrc: "/images/oromo.png",
     },
     {
@@ -148,8 +140,6 @@ export default function Projects() {
         "Creating smooth map interactions on mobile",
         "Optimizing app performance and battery usage",
       ],
-      demoUrl: "https://github.com/mohe-12",
-      codeUrl: "https://github.com/mohe-12",
       imageSrc: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&h=225&fit=crop&crop=center",
     },
     {
@@ -180,8 +170,6 @@ export default function Projects() {
         "Creating efficient progress tracking system",
         "Managing large file uploads and processing",
       ],
-      demoUrl: "https://github.com/mohe-12",
-      codeUrl: "https://github.com/mohe-12",
       imageSrc: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=225&fit=crop&crop=center",
     },
   ]
@@ -209,8 +197,6 @@ export default function Projects() {
               techStack={project.techStack}
               teamSize={project.teamSize}
               category={project.category}
-              demoUrl={project.demoUrl}
-              codeUrl={project.codeUrl}
               imageSrc={project.imageSrc}
               onClick={() => setSelectedProject(index)}
             />
