@@ -17,8 +17,6 @@ interface ProjectModalProps {
     teamSize: string
     role: string
     challenges: string[]
-    demoUrl?: string
-    codeUrl?: string
     imageSrc?: string
     gallery?: string[]
   }
@@ -199,31 +197,6 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                   ))}
                 </div>
               </div>
-
-              {/* Actions */}
-              <div className="space-y-3">
-                {project.demoUrl && (
-                  <a
-                    href={project.demoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-teal-500 to-teal-400 text-gray-900 font-medium py-3 px-4 rounded-lg hover:shadow-[0_0_15px_rgba(45,212,191,0.5)] transition-all duration-300"
-                  >
-                    <ExternalLink size={18} />
-                    <span>View Live Demo</span>
-                  </a>
-                )}
-                {project.codeUrl && (
-                  <a
-                    href={project.codeUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full bg-gray-800/50 text-teal-400 border border-teal-500/30 font-medium py-3 px-4 rounded-lg hover:bg-gray-700/50 hover:shadow-[0_0_15px_rgba(45,212,191,0.3)] transition-all duration-300"
-                  >
-                    <Github size={18} />
-                    <span>View Source Code</span>
-                  </a>
-                )}
               </div>
             </div>
           </div>
