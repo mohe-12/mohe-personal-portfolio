@@ -37,8 +37,6 @@ function About() {
     },
   ]
 
-  
-
   const counters = {
     projects: 25,
     clients: 10,
@@ -139,7 +137,7 @@ function About() {
       </div>
 
       
-      <div className="mb-16">
+      <div className="mb-16 mt-30">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {stats.map((stat, index) => (
             <div
