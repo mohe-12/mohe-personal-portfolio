@@ -12,6 +12,8 @@ interface ProjectCardProps {
   techStack: string[]
   teamSize: string
   category: string
+  demoUrl?: string
+  codeUrl?: string
   imageSrc?: string
   onClick: () => void
 }
@@ -23,6 +25,8 @@ export default function ProjectCard({
   techStack,
   teamSize,
   category,
+  demoUrl,
+  codeUrl,
   imageSrc,
   onClick,
 }: ProjectCardProps) {
@@ -50,6 +54,7 @@ export default function ProjectCard({
           </div>
         </div>
       )}
+
       <div className="p-6 flex flex-col h-full">
         <div className="mb-4">
           <h3 className="text-xl font-semibold text-gray-200 group-hover:text-teal-400 transition-colors line-clamp-1 mb-2">
@@ -68,7 +73,7 @@ export default function ProjectCard({
           <p className="text-gray-400 mb-4 text-sm leading-relaxed line-clamp-3">{description}</p>
         </div>
 
-        <div className="flex flex-wrap gap-2 mt-auto mb-4">
+        <div className="flex flex-wrap gap-2 mt-auto mb-3">
           {techStack.slice(0, 3).map((tech, index) => (
             <span key={index} className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-full">
               {tech}
@@ -81,14 +86,30 @@ export default function ProjectCard({
           )}
         </div>
 
-        <div
-          className={cn(
-            "flex gap-3 transition-all duration-300 transform",
-            isHovered ? "opacity-100 translate-y-0" : "opacity-70 translate-y-1",
-          )}
-        >
-        </div>
+        {(demoUrl || codeUrl) && (
+          <div
+            className={cn(
+              "flex gap-4 items-center text-sm text-teal-400 transition-all duration-300",
+              isHovered ? "opacity-100 translate-y-0" : "opacity-70 translate-y-1"
+            )}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {demoUrl && (
+              <a href={demoUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:underline">
+                <ExternalLink size={14} />
+                Demo
+              </a>
+            )}
+            {codeUrl && (
+              <a href={codeUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:underline">
+                <Github size={14} />
+                Code
+              </a>
+            )}
+          </div>
+        )}
       </div>
+
       <div
         className={cn(
           "h-1 bg-gradient-to-r from-teal-500 to-teal-300 transition-all duration-500 transform origin-left",
