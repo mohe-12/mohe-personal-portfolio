@@ -89,11 +89,11 @@ export default function Projects() {
           "User authentication and email service",
           "CRUD and admin controls with moderation",
       ],
-      imageSrc: "/images/culture.jpg",
+      imageSrc: "/images/culture.png",
     },
     {
       title: "Afan Oromo-English Dictionary App",
-      category: "Mobile App",
+      category: "Web App",
       description:
         "A lightweight web app for translating words between Afan Oromo and English, including audio pronunciation and sentence usage examples. Designed to help language learners.",
       fullDescription:
@@ -114,7 +114,7 @@ export default function Projects() {
         "Implementing TTS (Text-to-Speech)",
         "Optimizing PWA for offline usage",
       ],
-      imageSrc: "/images/oromo.png",
+      imageSrc: "/images/dictionary.png",
     },
     {
       title: "Local Business Directory App",
@@ -143,7 +143,7 @@ export default function Projects() {
       imageSrc: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&h=225&fit=crop&crop=center",
     },
     {
-      title: "EduPlatform - Learning Management",
+      title: "BHU Hospital Management System",
       category: "EdTech Platform",
       description:
         "Educational platform with course creation, video streaming, progress tracking, and certification system.",
@@ -170,7 +170,7 @@ export default function Projects() {
         "Creating efficient progress tracking system",
         "Managing large file uploads and processing",
       ],
-      imageSrc: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=225&fit=crop&crop=center",
+      imageSrc: "/images/bhu.png",
     },
   ]
 
