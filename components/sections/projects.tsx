@@ -146,7 +146,7 @@ export default function Projects() {
         "Creating smooth map interactions on mobile",
         "Optimizing app performance and battery usage",
       ],
-      imageSrc: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&h=225&fit=crop&crop=center",
+      imageSrc: "/images/local.jpg",
       codeUrl: "https://github.com/mohe-12"
     },
     {
