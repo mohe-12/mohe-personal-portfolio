@@ -198,6 +198,38 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                     </span>
                   ))}
                 </div>
+                
+                {(project.demoUrl || project.codeUrl) && (
+             <div className="bg-gray-800/30 backdrop-blur-sm p-4 rounded-xl border border-gray-700/50">
+              <h3 className="text-lg font-semibold text-gray-200 mb-3">Links</h3>
+              <div className="space-y-2 text-sm">
+             {project.demoUrl && (
+          <a
+          href={project.demoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-teal-400 hover:underline"
+        >
+          <ExternalLink size={16} />
+          Live Demo
+        </a>
+      )}
+      {project.codeUrl && (
+        <a
+          href={project.codeUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-teal-400 hover:underline"
+        >
+          <Github size={16} />
+          Source Code
+        </a>
+      )}
+    </div>
+  </div>
+)}
+
+                
               </div>
             </div>
           </div>
@@ -206,4 +238,3 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
     </div>
   )
 }
-
