@@ -21,7 +21,7 @@ export default function Projects() {
       description:
         "A full-stack web application that enables university students to access grades, schedules, submit assignments, and receive announcements from faculty in real-time.",
       fullDescription:
-        "A robust academic management system designed for Ethiopian universities, this platform allows students to view grades, schedules, announcements, and assignments, while instructors can upload course materials, manage class rosters, and post updates. It streamlines academic workflows and fosters better communication between students, instructors, and administrators.",
+        "A robust academic management system designed for Ethiopian universities, this platform allows students to view grades, schedules, announcements, and assignments, while instructors can upload course materials, manage class rosters, and post updates. It streamlines academic workflows and fosters better communication between students, instructors, and administrators",
       date: "Dec 2024",
       duration: "2.5 months",
       teamSize: "Solo Project",
@@ -38,7 +38,8 @@ export default function Projects() {
         "File upload with metadata",
         "Relational data design (classes, courses, users)",
       ],
-     imageSrc: "images/education.jpg"
+     imageSrc: "images/education.jpg",
+     codeUrl: "https://github.com/mohe-12"
     },
     {
       title: "Smart QR-Based Attendance System",
@@ -64,6 +65,7 @@ export default function Projects() {
          "User validation and duplicate prevention",
       ],
       imageSrc: "/images/qrcode.png",
+      codeUrl: "https://github.com/mohe-12"
   
     },
     {
@@ -72,7 +74,7 @@ export default function Projects() {
       description:
         "An event listing and RSVP platform tailored to cultural, educational, and creative events in Ethiopia. Users can register, browse, or manage events.",
       fullDescription:
-        "SocialMetrics is an advanced analytics platform that provides comprehensive insights into social media performance across multiple platforms. Built with Next.js and TypeScript, it features interactive data visualizations, automated reporting, and real-time metrics tracking. The dashboard integrates with major social media APIs to provide unified analytics and actionable insights.",
+        "A full-featured event management web app where users can browse, search, and RSVP to cultural, academic, or entertainment events across Ethiopia. Organizers can publish and manage events through an admin dashboard, while attendees receive real-time updates and email reminders, making cultural engagement more accessible.",
       date: "Sep 2023",
       duration: "2 months",
       teamSize: "Team of 2",
@@ -90,6 +92,8 @@ export default function Projects() {
           "CRUD and admin controls with moderation",
       ],
       imageSrc: "/images/culture.png",
+      demoUrl: "https://habesha-event-builder.lovable.app/",
+      codeUrl: "https://github.com/mohe-12"
     },
     {
       title: "Afan Oromo-English Dictionary App",
@@ -115,6 +119,8 @@ export default function Projects() {
         "Optimizing PWA for offline usage",
       ],
       imageSrc: "/images/dictionary.png",
+      demoUrl: "https://melodious-pixie-61e3aa.netlify.app/",
+      codeUrl: "https://github.com/yourusername/bhu-hospital-management-system"
     },
     {
       title: "Local Business Directory App",
@@ -140,30 +146,32 @@ export default function Projects() {
         "Creating smooth map interactions on mobile",
         "Optimizing app performance and battery usage",
       ],
-      imageSrc: "/images/local.jpg",
+      imageSrc: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&h=225&fit=crop&crop=center",
+      codeUrl: "https://github.com/mohe-12"
     },
     {
       title: "BHU Hospital Management System",
-      category: "Full-stack",
+      category: "Full-Stack",
       description:
-        "Hospital management system for BHU, enabling patient registration, appointment scheduling, and medical record management. Streamlines healthcare operations.",
+        " Hospital management system for BHU, enabling patient registration, appointment scheduling, and medical record management. Streamlines healthcare operations.",
       fullDescription:
-        "A comprehensive hospital management system designed for BHU, this application allows patients to register, book appointments, and access their medical records online. It simplifies healthcare operations by providing a centralized platform for patient management, appointment scheduling, and medical history tracking, enhancing the efficiency of healthcare delivery.",
+        " A comprehensive hospital management system designed for BHU, this application allows patients to register, book appointments, and access their medical records online. It simplifies healthcare operations by providing a centralized platform for patient management, appointment scheduling, and medical history tracking, enhancing the efficiency of healthcare delivery.",
       date: "Jun 2023",
-      duration: "4 months",
-      teamSize: "Team of 4",
-      role: "Backend Lead Developer",
-      techStack: ["PHP", "Node.js", "MySQL", "CSS", "NextJS", "Wamp sever", "HTML"],
+      duration: "1 months",
+      teamSize: "Team of 6",
+      role: "Full-stack Developer",
+      techStack: ["HTML", "JavaScript", "MySQL", "JWT", "CSS", ],
       features: [
          "Patient registration and profile management",
          "Online appointment booking and scheduling",
          "Doctor and department management",
          "Medical record storage and access",
          "Prescription and medication tracking",
-        "Automated billing and invoice generation",
-        "Admin dashboard with analytics and reporting",
-        "Role-based access control for staff, doctors, and patients"
+         "Automated billing and invoice generation",
+         "Admin dashboard with analytics and reporting",
+         "Role-based access control for staff, doctors, and patients"
       ],
+
       challenges: [
          "Ensuring data privacy and security for sensitive patient information",
          "Designing an intuitive UI for both medical staff and patients",
@@ -171,7 +179,9 @@ export default function Projects() {
          "Managing concurrent access and edits to patient records",
          "Maintaining performance with a growing number of records and users"
      ],
+
       imageSrc: "/images/bhu.png",
+      codeUrl: "https://github.com/mohe-12"
     },
   ]
 
