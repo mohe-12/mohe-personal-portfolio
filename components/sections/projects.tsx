@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils"
 export default function Projects() {
   const [mounted, setMounted] = useState(false)
   const [selectedProject, setSelectedProject] = useState<number | null>(null)
+  const [activeCategory, setActiveCategory] = useState("All")
 
   useEffect(() => {
     setMounted(true)
@@ -185,12 +186,21 @@ export default function Projects() {
     },
   ]
 
+  const categories = ["All", ...Array.from(new Set(projects.map((project) => project.category.trim())))]
+  const visibleProjects = activeCategory === "All" ? projects : projects.filter((project) => project.category.trim() === activeCategory)
+
   return (
     <section id="projects" className="py-20 relative scroll-mt-16">
-      <SectionHeading title="Projects" subtitle="Click any project to explore in detail" />
-
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((project, index) => (
+      <SectionHeading title="Selected work" subtitle="A few products and systems I&apos;ve built along the way" />
+      <div className="mb-8 flex flex-wrap gap-2" role="group" aria-label="Filter projects by category">
+        {categories.map((category) => (
+          <button key={category} type="button" onClick={() => setActiveCategory(category)} className={cn("rounded-full border px-4 py-2 text-sm transition-colors", activeCategory === category ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card/50 text-muted-foreground hover:border-primary/50 hover:text-foreground")}>
+            {category}
+          </button>
+        ))}
+      </div>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {visibleProjects.map((project, index) => (
           <div
             key={index}
             className={cn(
@@ -209,7 +219,7 @@ export default function Projects() {
               teamSize={project.teamSize}
               category={project.category}
               imageSrc={project.imageSrc}
-              onClick={() => setSelectedProject(index)}
+              onClick={() => setSelectedProject(projects.indexOf(project))}
             />
           </div>
         ))}

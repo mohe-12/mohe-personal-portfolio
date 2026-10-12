@@ -6,9 +6,9 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Mohammed Hasen M. - Full-Stack Developer",
+  title: "Mohammed Hasen — Full-Stack Developer",
   description:
-    "Professional Full-Stack Web Developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and collaboration.",
+    "Mohammed Hasen is a full-stack developer building fast, thoughtful digital products with React, Next.js, Node.js, and modern web technologies.",
   keywords: [
     "Full-Stack Developer",
     "Web Developer",

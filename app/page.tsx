@@ -11,10 +11,11 @@ import Footer from "@/components/sections/footer"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-gray-100 overflow-hidden">
-      <div className="fixed inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
-      <Navbar/>
-      <div className="container mx-auto px-4 relative z-10">
+    <main className="min-h-screen overflow-hidden bg-background text-foreground">
+      <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_15%_10%,hsl(var(--primary)/0.12),transparent_28%),radial-gradient(circle_at_85%_20%,hsl(var(--accent)/0.08),transparent_24%),linear-gradient(hsl(var(--background)),hsl(var(--background)))]" />
+      <div className="pointer-events-none fixed inset-0 -z-10 opacity-30 [background-image:linear-gradient(hsl(var(--border)/0.35)_1px,transparent_1px),linear-gradient(90deg,hsl(var(--border)/0.35)_1px,transparent_1px)] [background-size:72px_72px] [mask-image:linear-gradient(to_bottom,black,transparent_75%)]" />
+      <Navbar />
+      <div className="container relative z-10 mx-auto max-w-7xl px-5 sm:px-8">
         <Hero />
         <About />
         <Skills />
